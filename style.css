@@ -1,0 +1,135 @@
+/* ----- GENERAL-----*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #eee;
+    font-size: 16px;
+}
+
+
+/* ----- MEDIA QUERIES -----*/
+
+@media (max-width:768px) {
+    .mainSidebar {
+        position: static;
+    }
+    .mainSidebar-Brand {
+        text-transform: uppercase;
+    }
+    .top-navbar {
+        position: static;
+    }
+}
+
+
+/* ----- SIDEBAR -----*/
+
+.mainSidebar {
+    /* background-color: green; */
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("images/img1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 5px 7px 25px #999;
+}
+
+.mainSidebar-Brand {
+    border-bottom: 1px groove #eeeeee;
+}
+
+.mainSidebar-Helene {
+    border-bottom: 1px groove #eeeeee;
+    text-decoration: none;
+}
+
+.mainSidebar-Item a:hover {
+    background-color: #444444;
+    border-radius: 5px;
+    transition: all .5s;
+}
+
+.mainSidebar-Item .current {
+    background-color: #f44336;
+    border-radius: 7px;
+    box-shadow: 2px 5px 10px #111;
+    transition: all .4s;
+}
+
+.mainSidebar-Item .current:hover {
+    background-color: #f66436;
+    border-radius: 7px;
+    box-shadow: 2px 5px 20px #111;
+    transform: translateY(-2px);
+    transition: all .3s;
+}
+
+
+/* ----- NAVBAR -----*/
+
+.mainNavbar-Search input {
+    border-radius: 0;
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    border-bottom: 2px solid #999;
+}
+
+.mainNavbar-Search input:focus {
+    box-shadow: none;
+    background: transparent;
+    border-bottom: 2px solid #8b0dea;
+}
+
+.mainNavbar-Search input:hover {
+    border-bottom: 1px solid #ea1c0d;
+}
+
+.mainNavbar-Search button {
+    padding: 10px 16px;
+    border-radius: 100%;
+}
+
+.mainNavbar-Search button:hover {
+    transform: translateY(-2px);
+    transition: all .3s;
+}
+
+.mainNavbar-Icon .icon-parent {
+    position: relative;
+}
+
+.mainNavbar-Icon .icon-bullet::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 15px;
+    height: 12px;
+    width: 12px;
+    background-color: #ea1c0d;
+    border-radius: 50%;
+}
+
+
+/* ----- CARDS -----*/
+
+.card {
+    border-radius: 6px;
+    box-shadow: 3px 0px 9px 0px rgba(119, 119, 119, 0.49);
+    -moz-box-shadow: 3px 0px 9px 0px rgba(119, 119, 119, 0.49);
+    -webkit-box-shadow: 3px 0px 9px 0px rgba(119, 119, 119, 0.49);
+}
+
+
+/* ----- MONEY -----*/
+
+.mainFinancial-Table tr {
+    line-height: 31px;
+}
+
+
+/* ----- TASK -----*/
+
+.task-border {
+    border-left: 3px solid #f66436;
+}
